@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Gallery - Fardther</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .image-space {
+      background-color: #f0f0f0;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px dashed #ccc;
+    }
+    .back-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: magenta;
+      color: white;
+      text-decoration: none;
+      margin: 20px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="back-button">Back to Home</a>
+  <div class="gallery-grid">
+    <div class="image-space">Image 1</div>
+    <div class="image-space">Image 2</div>
+    <div class="image-space">Image 3</div>
+    <div class="image-space">Image 4</div>
+    <div class="image-space">Image 5</div>
+    <div class="image-space">Image 6</div>
+    <div class="image-space">Image 7</div>
+    <div class="image-space">Image 8</div>
+    <div class="image-space">Image 9</div>
+    <div class="image-space">Image 10</div>
+  </div>
+</body>
+</html>
