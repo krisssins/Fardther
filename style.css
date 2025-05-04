@@ -83,12 +83,3 @@ html, body {
   align-items: center;
   color: #00529e;
   font-size: 40px;}
-
-.video-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 40px auto;
-  max-width: 1000px;
-  padding: 0 20px;
-}
