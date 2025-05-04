@@ -11,6 +11,19 @@ html, body {
   gap: 40px;
   align-items: center;
 }
+
+.two-columns {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  justify-content: center;
+}
+
+.left-column, .right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
 .square {
   width: 1700px;
   height: 100px;
