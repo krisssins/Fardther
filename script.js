@@ -1,30 +1,28 @@
 
-function loginWithReplit() {
-  window.addEventListener("message", authComplete);
-  var h = 500;
-  var w = 350;
-  var left = screen.width / 2 - w / 2;
-  var top = screen.height / 2 - h / 2;
+function showLoginPopup() {
+  document.getElementById("loginPopup").style.display = "block";
+}
 
-  var authWindow = window.open(
-    "https://replit.com/auth_with_repl_site?domain=" + location.host,
-    "_blank",
-    "modal=yes, toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=" +
-      w +
-      ", height=" +
-      h +
-      ", top=" +
-      top +
-      ", left=" +
-      left
-  );
+function closeLoginPopup() {
+  document.getElementById("loginPopup").style.display = "none";
+}
 
-  function authComplete(e) {
-    if (e.data !== "auth_complete") {
-      return;
-    }
-    window.removeEventListener("message", authComplete);
-    authWindow.close();
-    location.reload();
+function login() {
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
+  
+  if(username && password) {
+    alert("Pieslēgšanās veiksmīga!");
+    closeLoginPopup();
+  } else {
+    alert("Lūdzu ievadiet lietotājvārdu un paroli!");
+  }
+}
+
+// When user clicks outside of popup, close it
+window.onclick = function(event) {
+  const popup = document.getElementById("loginPopup");
+  if (event.target == popup) {
+    popup.style.display = "none";
   }
 }

@@ -25,7 +25,17 @@
         <div class="column">Par mums</div>
       </div>
     </div>
-    <div class="slegt" onclick="loginWithReplit()">Pieslēgties</div>
+    <div class="login-button" onclick="showLoginPopup()">Pieslēgties</div>
+  </div>
+
+  <div class="login-popup" id="loginPopup">
+    <div class="popup-content">
+      <span class="close" onclick="closeLoginPopup()">&times;</span>
+      <h2>Pieslēgties</h2>
+      <input type="text" placeholder="Lietotājvārds" id="username">
+      <input type="password" placeholder="Parole" id="password">
+      <button onclick="login()">Ienākt</button>
+    </div>
   </div>
   
   <div style="max-width: 800px; margin:auto; padding: 20px;; border-radius: 8px; box-shadow:">
