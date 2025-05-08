@@ -75,7 +75,6 @@ html, body {
   align-items: center;
   color: white;
   font-size: 40px;}
-
 .login-button {
   width: 800px;
   height: 100px;
@@ -87,7 +86,6 @@ html, body {
   font-size: 40px;
   cursor: pointer;
 }
-
 .login-popup {
   display: none;
   position: fixed;
@@ -98,7 +96,6 @@ html, body {
   background-color: rgba(0,0,0,0.5);
   z-index: 1000;
 }
-
 .popup-content {
   background-color: #fff;
   margin: 15% auto;
@@ -107,33 +104,28 @@ html, body {
   border-radius: 5px;
   position: relative;
 }
-
 .popup-content h2 {
   margin-top: 0;
   color: #00529e;
   text-align: center;
 }
-
 .popup-content input {
   width: 100%;
   padding: 10px;
-  margin: 10px 0;
+  margin: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
   box-sizing: border-box;
 }
-
 .popup-content button {
   width: 100%;
   padding: 10px;
   background-color: #72cffd;
   color: #00529e;
-  border: none;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
 }
-
 .close {
   position: absolute;
   right: 10px;
