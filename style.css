@@ -6,15 +6,12 @@ html, body {
   scroll-behavior: smooth;
 }
 
-* {
-  transition: all 0.3s ease;
-}
+
 .container {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  align-items: center;
-}
+  align-items: center;}
 
 .two-columns {
   display: flex;
